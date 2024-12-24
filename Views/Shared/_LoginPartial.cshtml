@@ -1,0 +1,39 @@
+@using Microsoft.AspNetCore.Identity
+@using MyProject.Areas.Identity.Data
+
+@inject SignInManager<MyIdentityUser> SignInManager
+@inject UserManager<MyIdentityUser> UserManager
+
+
+
+        @if (SignInManager.IsSignedIn(User))
+        {
+            @if (User.IsInRole("Admin"))
+            {
+                <li class="scroll-to-section">
+                    <a id="manage" class="text-dark" asp-controller="Admin" asp-action="Index" >Hello @UserManager.GetUserName(User)!</a>
+                </li>
+            }
+            else{
+                <li class="scroll-to-section">
+                     <a id="manage" class="text-dark" @*asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"*@>Hello @UserManager.GetUserName(User)!</a> 
+                </li>
+            }
+            
+            <li class="scroll-to-section">
+                <form id="logoutForm" class="form-inline " asp-area="Identity" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button id="logout" type="submit" class=" btn btn-link text-dark border-0">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="scroll-to-section">
+                <a class="text-dark" id="login" asp-controller="Account" asp-action="Login">Login</a>
+            </li>
+            <li class="scroll-to-section">
+                <a class="text-dark" id="register" asp-controller="Account" asp-action="Register">Register</a>
+            </li>
+        }
+
+

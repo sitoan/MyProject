@@ -1,0 +1,569 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/obj/Debug/net8.0/scopedcss/projectbundle/MyProject.bundle.scp.css",
+      "PackagePath": "staticwebassets/MyProject.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/account.css",
+      "PackagePath": "staticwebassets/assets/css/account.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/assets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/flex-slider.css",
+      "PackagePath": "staticwebassets/assets/css/flex-slider.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/font-awesome.css",
+      "PackagePath": "staticwebassets/assets/css/font-awesome.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/lightbox.css",
+      "PackagePath": "staticwebassets/assets/css/lightbox.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/owl-carousel.css",
+      "PackagePath": "staticwebassets/assets/css/owl-carousel.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/css/templatemo-hexashop.css",
+      "PackagePath": "staticwebassets/assets/css/templatemo-hexashop.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/Flaticon.woff",
+      "PackagePath": "staticwebassets/assets/fonts/Flaticon.woff"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/assets/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/flexslider-icon.eot",
+      "PackagePath": "staticwebassets/assets/fonts/flexslider-icon.eot"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/flexslider-icon.svg",
+      "PackagePath": "staticwebassets/assets/fonts/flexslider-icon.svg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/flexslider-icon.ttf",
+      "PackagePath": "staticwebassets/assets/fonts/flexslider-icon.ttf"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/flexslider-icon.woff",
+      "PackagePath": "staticwebassets/assets/fonts/flexslider-icon.woff"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/assets/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/assets/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/assets/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/assets/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/assets/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/slick.eot",
+      "PackagePath": "staticwebassets/assets/fonts/slick.eot"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/slick.svg",
+      "PackagePath": "staticwebassets/assets/fonts/slick.svg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/slick.ttf",
+      "PackagePath": "staticwebassets/assets/fonts/slick.ttf"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/fonts/slick.woff",
+      "PackagePath": "staticwebassets/assets/fonts/slick.woff"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/about-left-image.jpg",
+      "PackagePath": "staticwebassets/assets/images/about-left-image.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/about-us-page-heading.jpg",
+      "PackagePath": "staticwebassets/assets/images/about-us-page-heading.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/baner-right-image-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/baner-right-image-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/baner-right-image-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/baner-right-image-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/baner-right-image-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/baner-right-image-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/baner-right-image-04.jpg",
+      "PackagePath": "staticwebassets/assets/images/baner-right-image-04.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/close.png",
+      "PackagePath": "staticwebassets/assets/images/close.png"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/explore-image-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/explore-image-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/explore-image-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/explore-image-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-04.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-04.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-05.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-05.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/instagram-06.jpg",
+      "PackagePath": "staticwebassets/assets/images/instagram-06.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/kid-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/kid-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/kid-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/kid-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/kid-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/kid-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/left-banner-image.jpg",
+      "PackagePath": "staticwebassets/assets/images/left-banner-image.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/loading.gif",
+      "PackagePath": "staticwebassets/assets/images/loading.gif"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/logo.png",
+      "PackagePath": "staticwebassets/assets/images/logo.png"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/men-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/men-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/men-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/men-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/men-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/men-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/next.png",
+      "PackagePath": "staticwebassets/assets/images/next.png"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/prev.png",
+      "PackagePath": "staticwebassets/assets/images/prev.png"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/products-page-heading.jpg",
+      "PackagePath": "staticwebassets/assets/images/products-page-heading.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/service-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/service-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/service-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/service-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/service-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/service-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/single-product-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/single-product-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/single-product-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/single-product-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/team-member-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/team-member-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/team-member-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/team-member-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/white-logo.png",
+      "PackagePath": "staticwebassets/assets/images/white-logo.png"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/women-01.jpg",
+      "PackagePath": "staticwebassets/assets/images/women-01.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/women-02.jpg",
+      "PackagePath": "staticwebassets/assets/images/women-02.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/images/women-03.jpg",
+      "PackagePath": "staticwebassets/assets/images/women-03.jpg"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/accordions.js",
+      "PackagePath": "staticwebassets/assets/js/accordions.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/assets/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/custom.js",
+      "PackagePath": "staticwebassets/assets/js/custom.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/datepicker.js",
+      "PackagePath": "staticwebassets/assets/js/datepicker.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/imgfix.min.js",
+      "PackagePath": "staticwebassets/assets/js/imgfix.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/isotope.js",
+      "PackagePath": "staticwebassets/assets/js/isotope.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/jquery-2.1.0.min.js",
+      "PackagePath": "staticwebassets/assets/js/jquery-2.1.0.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/jquery.counterup.min.js",
+      "PackagePath": "staticwebassets/assets/js/jquery.counterup.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/lightbox.js",
+      "PackagePath": "staticwebassets/assets/js/lightbox.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/owl-carousel.js",
+      "PackagePath": "staticwebassets/assets/js/owl-carousel.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/popper.js",
+      "PackagePath": "staticwebassets/assets/js/popper.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/quantity.js",
+      "PackagePath": "staticwebassets/assets/js/quantity.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/scrollreveal.min.js",
+      "PackagePath": "staticwebassets/assets/js/scrollreveal.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/slick.js",
+      "PackagePath": "staticwebassets/assets/js/slick.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/assets/js/waypoints.min.js",
+      "PackagePath": "staticwebassets/assets/js/waypoints.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/nhattoan/Documents/HSU/webDev/MyProject/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MyProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.MyProject.props",
+      "PackagePath": "build\\MyProject.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MyProject.props",
+      "PackagePath": "buildMultiTargeting\\MyProject.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MyProject.props",
+      "PackagePath": "buildTransitive\\MyProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

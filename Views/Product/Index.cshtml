@@ -1,0 +1,150 @@
+@model IPagedList<Product>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+<style>
+    .item .thumb img {
+        width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của container */
+        height: 368.91px; /* Đặt chiều cao cố định */
+        object-fit: cover; /* Đảm bảo ảnh không bị méo và khớp với khung */
+        border-radius: 10px; /* Bo góc các ảnh */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng */
+    }
+    .pagination{display: block;}
+    
+    .page-link{padding: 0%;}
+
+    .active .page-link{
+        width: 44px;
+        height: 44px;
+        border: 1px solid #2a2a2a;
+        display: inline-block;
+        text-align: center;
+        line-height: 44px;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #2a2a2a;
+        color: #fff;
+    }
+
+</style>
+
+<!-- ***** Main Banner Area Start ***** -->
+<div class="page-heading" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="inner-content">
+                    <h2>Check Our Products</h2>
+                    <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***** Main Banner Area End ***** -->
+
+
+<!-- ***** Products Area Starts ***** -->
+<section class="section" id="products">
+    <div class="row mb-3 d-flex justify-content-center">
+        <div class="col-lg-4">
+            <form method="get" asp-action="Index">
+                <div class="input-group">
+                    <select class="form-select" name="categoryId" id="categoryDropdown">
+                        <option value="">All Categories</option>
+                        @foreach (var category in (List<Category>)ViewBag.Categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <input type="hidden" id="currentCategoryId" value="@ViewBag.CurrentCategoryId" />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Our Latest Products</h2>
+                    <span>Check out all of our products.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach(var product in Model){
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="thumb">
+                            <div class="hover-content">
+                                <ul>
+                                    <li><a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id"><i class="fa fa-eye"></i></a></li>
+                                    <li><a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id"><i class="fa fa-star"></i></a></li>
+                                    <li><a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <img src="@product.Image" alt="">
+                        </div>
+                        <div class="down-content">
+                            <h4>@product.Name</h4>
+                            <span>@product.Price VND</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            @if (product.Inventory <= 0)
+                            {
+                                <span class="badge bg-danger">Out of Stock</span>
+                            }
+                            else if (product.Inventory < 10)
+                            {
+                                <span class="badge bg-warning">Low Stock</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    
+    <div class="col-lg-12">
+        <div class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), 
+            new PagedListRenderOptions{
+                PageClasses = new[] { "page-link" },   
+                ActiveLiElementClass = "active"
+            })
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Lấy giá trị categoryId hiện tại
+        const currentCategoryId = document.getElementById("currentCategoryId").value;
+
+        // Lấy dropdown
+        const dropdown = document.getElementById("categoryDropdown");
+
+        // Đặt option được chọn dựa trên currentCategoryId
+        if (currentCategoryId) {
+            const options = dropdown.options;
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].value === currentCategoryId) {
+                    options[i].selected = true;
+                    break;
+                }
+            }
+        }
+    });
+</script>
+
+<!-- ***** Products Area Ends ***** -->

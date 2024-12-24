@@ -1,0 +1,293 @@
+@{
+    ViewData["Title"] = "Cart";
+}
+@using MyProject.Dto
+@model List<CartDto>
+
+<style>
+    .cart-container {
+        margin: 10%;
+    }
+    .product-checkbox {
+        transform: scale(1.5);
+        margin-right: 10px;
+    }
+</style>
+
+<div class="cart-container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-4">Your Shopping Cart</h2>
+            
+            @if (!Model.Any())
+            {
+                <div class="alert alert-info text-center" role="alert">
+                    Your cart is empty.
+                </div>
+            }
+            else
+            {
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>
+                                            <input type="checkbox" id="select-all-checkbox" class="product-checkbox">
+                                            Select All
+                                        </th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th class="text-right">Total</th>
+                                        <th class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" 
+                                                       class="product-checkbox item-checkbox" 
+                                                       data-item-id="@item.Id" 
+                                                       data-item-price="@item.TotalPrice"
+                                                       data-item-quantity="@item.Quantity">
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="@item.Image" alt="@item.ProductName" 
+                                                         class="img-thumbnail mr-3" style="width: 80px; height: 80px; object-fit: cover;">
+                                                    <span class="font-weight-bold">@item.ProductName</span>
+                                                </div>
+                                            </td>
+                                            <td>@item.Price VND</td>
+                                            <td>
+                                                <div class="input-group input-group-sm" style="width: 120px;">
+                                                    <div class="input-group-prepend">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('@item.Id', -1)">-</button>
+                                                    </div>
+                                                    <input type="input" 
+                                                            class="form-control text-center cart-quantity" 
+                                                            value="@item.Quantity" 
+                                                            min="1"
+                                                            max="@item.Inventory"
+                                                            id="quantity-@item.Id"
+                                                            readonly>
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('@item.Id', 1)">+</button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-right cart-price">@item.TotalPrice VND</td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger btn-sm" onclick="removeItem('@item.Id')">
+                                                    <i class="fa fa-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">Order Summary</h4>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Total Selected Items</span>
+                        <span class="font-weight-bold cart-total-quantity">0</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">Total</h5>
+                        <h4 class="mb-0 text-primary cart-total-price">0 VND</h4>
+                    </div>
+                    <button class="btn btn-success btn-block" onclick="placeOrder()">
+                        Place Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function updateQuantity(itemId, change) {
+    const currentQuantityEl = document.getElementById(`quantity-${itemId}`);
+    const maxQuantity = parseInt(currentQuantityEl.max);
+    let newQuantity = parseInt(currentQuantityEl.value) + change;
+    
+    // Validate quantity
+    if (newQuantity < 1) {
+        alert('Quantity cannot be less than 1');
+        return;
+    }
+    
+    if (newQuantity > maxQuantity) {
+        alert(`Maximum quantity available is ${maxQuantity}`);
+        return;
+    }
+
+    fetch('/Cart/UpdateQuantity', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+            itemId: itemId, 
+            quantity: newQuantity 
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            // Update item quantity
+            currentQuantityEl.value = data.newProductQuantity;
+            
+            // Update item price
+            const totalPriceEl = currentQuantityEl.closest('tr').querySelector('.cart-price');
+            if (totalPriceEl) {
+                totalPriceEl.textContent = `${data.newProductPrice.toLocaleString()} VND`;
+            }
+
+            // Update checkbox data attributes
+            const checkboxEl = currentQuantityEl.closest('tr').querySelector('.item-checkbox');
+            if (checkboxEl) {
+                checkboxEl.dataset.itemPrice = data.newProductPrice;
+                checkboxEl.dataset.itemQuantity = data.newProductQuantity;
+            }
+
+            // Recalculate order summary if the item is checked
+            if (checkboxEl && checkboxEl.checked) {
+                calculateOrderSummary();
+            }
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while updating quantity');
+    });
+}
+
+function removeItem(itemId) {
+    fetch(`/Cart/RemoveItem/${itemId}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            const itemRow = document.querySelector(`tr:has(#quantity-${itemId})`);
+            if (itemRow) {
+                itemRow.remove();
+            }
+            
+            // Recalculate order summary
+            calculateOrderSummary();
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while removing the item');
+    });
+}
+
+// Calculate order summary based on checked items
+function calculateOrderSummary() {
+    const checkedBoxes = document.querySelectorAll('.item-checkbox:checked');
+    
+    let totalItems = 0;
+    let totalPrice = 0;
+
+    checkedBoxes.forEach(checkbox => {
+        const quantity = parseInt(checkbox.dataset.itemQuantity);
+        const price = parseFloat(checkbox.dataset.itemPrice);
+        
+        totalItems += quantity;
+        totalPrice += price;
+    });
+
+    // Update order summary
+    const totalItemsEl = document.querySelector('.cart-total-quantity');
+    const totalPriceSummaryEl = document.querySelector('.cart-total-price');
+    
+    if (totalItemsEl) totalItemsEl.textContent = totalItems;
+    if (totalPriceSummaryEl) totalPriceSummaryEl.textContent = `${totalPrice.toLocaleString()} VND`;
+}
+
+// Event listener for individual item checkboxes
+document.querySelectorAll('.item-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', calculateOrderSummary);
+});
+
+// Select/Deselect all checkbox functionality
+document.getElementById('select-all-checkbox').addEventListener('change', function() {
+    const itemCheckboxes = document.querySelectorAll('.item-checkbox');
+    itemCheckboxes.forEach(checkbox => {
+        checkbox.checked = this.checked;
+    });
+    calculateOrderSummary();
+});
+
+function placeOrder() {
+    const checkedBoxes = document.querySelectorAll('.item-checkbox:checked');
+    const selectedItemIds = Array.from(checkedBoxes).map(checkbox => 
+        parseInt(checkbox.dataset.itemId)
+    );
+
+    if (selectedItemIds.length === 0) {
+        alert('Please select items to place an order');
+        return;
+    }
+
+    fetch('/Order/PlaceOrder', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+            selectedItemIds: selectedItemIds 
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            alert('Order placed successfully!');
+            // Optional: Redirect to order confirmation or refresh page
+            location.reload();
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while placing the order');
+    });
+}
+</script>

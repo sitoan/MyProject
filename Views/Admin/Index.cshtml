@@ -1,0 +1,65 @@
+@using MyProject.ViewModels
+@{
+    ViewData["Title"] = "Admin";
+}
+@model List<CategoryProductViewModel>
+
+<style>
+    .container-fluid{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+</style>
+<div class="container-fluid">
+    <h1 class="mt-4 mb-4">Categories Management</h1>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            Categories List
+            <a asp-action="CreateCategory" class="btn btn-primary btn-sm float-right">
+                 Create New Category
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Products Count</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Category?.Id</td>
+                                <td>@item.Category?.Name</td>
+                                <td>@item.Category?.Description</td>
+                                <td>@(item.Products?.Count ?? 0)</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="EditCategory" asp-route-id="@item.Category?.Id" class="btn btn-primary btn-sm">
+                                             Edit
+                                        </a>
+                                        <a asp-action="DeleteCategory" asp-route-id="@item.Category?.Id" class="btn btn-danger btn-sm">
+                                            > Delete
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

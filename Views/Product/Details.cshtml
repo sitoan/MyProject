@@ -1,0 +1,160 @@
+@using Microsoft.AspNetCore.Identity
+@using MyProject.Areas.Identity.Data
+@{
+    ViewData["Title"] = "Details";
+}
+@inject SignInManager<MyIdentityUser> SignInManager
+@inject UserManager<MyIdentityUser> UserManager
+@model Product
+
+<!--  Main Banner Area Start  -->
+    <div class="page-heading" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+                        <h2>Single Product Page</h2>
+                        <span>Awesome &amp; Creative HTML CSS layout by TemplateMo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Main Banner Area End  -->
+
+    <!--  Product Area Starts  -->
+    <section class="section" id="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                <div class="left-images">
+                    <img src="@Model.Image" alt="" style="width: 730px; height: 379.22px; object-fit: cover; border-radius: 10px;">
+                    <img src="@Model.Image" alt="" style="width: 730px; height: 379.22px; object-fit: cover; border-radius: 10px;">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-content">
+                    <h4>@Model.Name</h4>
+                    <span class="price">@Model.Price VND</span>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>@Model.Description</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i><p>@Model.Quote</p>
+                    </div>
+                    <div class="quantity-content">
+                        <div class="left-content">
+                            <h6>No. of Orders</h6>
+                        </div>
+                        <div class="right-content">
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="1" max="@Model.Inventory" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h4>Total: $210.00</h4>
+                        <div class="main-border-button"><a href="#">Add To Cart</a></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const minusButton = document.querySelector('.minus');
+    const plusButton = document.querySelector('.plus');
+    const quantityInput = document.querySelector('.input-text.qty');
+    const addToCartButton = document.querySelector('.main-border-button a');
+    const totalPriceElement = document.querySelector('.total h4');
+
+    const productId = '@Model.Id';
+    const productPrice = parseFloat('@Model.Price'.replace(/[^\d.-]/g, ''));
+    const loggedInUserId = '@UserManager.GetUserId(User)';
+    const maxInventory = parseInt('@Model.Inventory'); // Thêm biến inventory
+    
+    // Quantity adjustment
+    minusButton.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+            currentValue--;
+            quantityInput.value = currentValue;
+            updateTotalPrice();
+        }
+    });
+
+    plusButton.addEventListener('click', function() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue < maxInventory) { // Kiểm tra giới hạn inventory
+            currentValue++;
+            quantityInput.value = currentValue;
+            updateTotalPrice();
+        }
+    });
+
+    quantityInput.addEventListener('change', function() {
+        let currentValue = parseInt(this.value);
+        if (currentValue > maxInventory) {
+            this.value = maxInventory;
+        } else if (currentValue < 1) {
+            this.value = 1;
+        }
+        updateTotalPrice();
+    });
+
+    // Update total price function
+    function updateTotalPrice() {
+        const quantity = parseInt(quantityInput.value);
+        const totalPrice = (quantity * productPrice).toFixed(2);
+        totalPriceElement.textContent = `Total: $${totalPrice}`;
+    }
+
+    // Add to Cart functionality
+    addToCartButton.addEventListener('click', function(event) {
+        if (loggedInUserId) {
+            event.preventDefault(); // Prevent default link behavior
+
+            const quantity = parseInt(quantityInput.value);
+            const totalPrice = quantity * productPrice;
+
+            const cartData = {
+                MyUserID: loggedInUserId,
+                ProductId: productId,
+                Quantity: quantity,
+                Price: totalPrice
+            };
+
+            // Send cart data to server
+            fetch('/Cart/AddCart', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(cartData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                alert('Product added to cart successfully!');
+                return response.json();
+            });
+        }
+        else{
+            window.location.href = '/Account/Login';
+        }
+    });
+
+    // Initialize total price on page load
+    updateTotalPrice();
+    });
+</script>

@@ -1,0 +1,36 @@
+@model Category
+
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<style>
+    .container-fluid{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+</style>
+<div class="container-fluid">
+    <h1>Create New Category</h1>
+
+<form asp-action="CreateCategory" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-secondary">Back</a>
+    </div>
+</form>
+</div>
+
+
